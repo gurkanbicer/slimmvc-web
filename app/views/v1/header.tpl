@@ -15,6 +15,7 @@
     <title>{$pageTitle}</title>
     <!-- META -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{$pageDescription}">
     <meta name="keywords" content="slimmvc, slim mvc, slimphp, slim framework, php framework, framework, mvc">
     <meta name="robots" content="index,follow">
