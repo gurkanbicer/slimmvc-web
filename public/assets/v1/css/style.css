@@ -1,0 +1,39 @@
+@import "../vendor/bootstrap/css/bootstrap.min.css";
+@import "../vendor/prism/css/prism.css";
+@import "../vendor/fontawesome/css/all.min.css";
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500&amp;subset=latin-ext");
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400');
+
+html, body {
+  font-family: 'Quicksand', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500 !important;
+}
+
+h4.collapser {
+  cursor: pointer;
+}
+
+strong, b {
+  font-weight: 500 !important;
+}
+
+pre, code {
+  font-family: 'Source Code Pro', monospace !important;
+  font-weight: 300 !important;
+  font-size: 12px !important;
+}
+
+.container {
+  max-width: 920px;
+}
+
+.card-img-top {
+  width: 64px !important;
+  height: 64px !important;
+  margin: 30px auto 15px !important;
+}

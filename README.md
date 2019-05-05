@@ -1,2 +1,3 @@
-# slimmvc-web
-The SlimMVC's website.
+# SlimMVC Web
+
+The SlimMVC's website. 
