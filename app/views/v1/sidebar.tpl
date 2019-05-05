@@ -1,4 +1,4 @@
-<div class="card m-0 p-0 shadow rounded-0">
+<div class="card mt-0 mx-0 mb-5 p-0 shadow rounded-0">
   {foreach $guides as $guide}
     <div class="card-body px-3 py-2">
       <h4 class="card-title collapser my-1" id="{$guide['categoryName']}" data-toggle="collapse" href="#list{$guide['categoryName']}" role="button" aria-expanded="false" aria-controls="list{$guide['categoryName']}" title="click to expand">{$guide['categoryTitle']}</h4>
