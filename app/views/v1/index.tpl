@@ -6,7 +6,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <h1 class="text-center">SlimMVC</h1>
           <p class="lead text-center mt-1 mb-5">Extended version of Slim Framework for who likes the MVC.</p>
-          <p class="text-muted">It's provides an <strong>MVC</strong> structure for SlimPHP (<a href="https://www.slimframework.com" target="_blank">Slim Framework</a>). Also, you can find useful <strong>helpers</strong>, <strong>libraries</strong> and <strong>some of the improved features</strong> inside of package.</p>
+          <p class="text-muted">It provides an <strong>MVC</strong> structure for SlimPHP (<a href="https://www.slimframework.com" target="_blank">Slim Framework</a>). Also, you can find useful <strong>helpers</strong>, <strong>libraries</strong> and <strong>some of the improved features</strong> inside of package.</p>
           <pre class="mt-4 mb-4 bg-light border rounded-lg shadow-sm"><code class="language-php">
               &lt;?php
 /**
