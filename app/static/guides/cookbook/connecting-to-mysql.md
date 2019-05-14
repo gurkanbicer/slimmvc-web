@@ -27,3 +27,37 @@ The following example assumes that there is a table named users and select the d
 ```php
 $results = Database::table('users')->where('id', '=', 5)->first(); 
 ```
+
+##### Connecting to multiple MySQL Databases
+
+You can connect multiple database in your project. Firstly, you should define the configurations on app/config/database.php file. Then, you can choose which database will be connected. See the example in the below;
+
+```
+Database::connectTo('default');
+$results = Database::table('users')->where('id', '=', 5)->first(); 
+
+Database::connectTo('secondary', 'secondaryDB');
+$results = Database::connection('secondaryDB')->table('users')->where('id', '=', 5)->first(); 
+``` 
+
+The first parameter is the configuration key, the secondary parameter is the connection name. If it wasn't defined, you can't connect to another database. Also, you should use connection() function before the table() function.
+
+
+##### quickConnect() function
+
+If you will write the database configuration on the controller/model or you will get it from the form variables, you can use quickConnect() function. See the example in the below.
+
+```php
+Database::quickConnect([
+    'driver' => 'mysql',
+    'host' => 'MYSQLHOSTNAME',
+    'database' => 'MYSQLDATABASE',
+    'username' => 'MYSQLUSERNAME',
+    'password' => 'MYSQLPASSWORD',
+    'charset' => 'utf8',
+    'collation' => 'utf8_unicode_ci',
+    'prefix' => '',
+], 'anotherDB');
+
+$results = Database::connection('anotherDB')->table('users')->get();
+```
