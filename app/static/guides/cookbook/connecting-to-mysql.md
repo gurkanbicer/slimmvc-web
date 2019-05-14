@@ -32,7 +32,7 @@ $results = Database::table('users')->where('id', '=', 5)->first();
 
 You can connect multiple database in your project. Firstly, you should define the configurations on app/config/database.php file. Then, you can choose which database will be connected. See the example in the below;
 
-```
+```php
 Database::connectTo('default');
 $results = Database::table('users')->where('id', '=', 5)->first(); 
 
